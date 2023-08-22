@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('assets/fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('assets/fonts/Poppins-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('assets/fonts/Montserrat-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #e50914;
+  --black: rgb(10, 10, 10);
+  --otherBlack: #111;
+  --white: #fff;
+  --gray: gray;
+}
+
+html,
+body {
+  backgroud: var(--otherBlack);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  font-family: Roboto, sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.react-date-picker {
+  font-family: Montserrat;
+}
+
+.react-calendar * {
+  font-family: Montserrat;
+}
+
+.custom-form {
+  max-width: 400px;
+  margin: 0 auto;
+}

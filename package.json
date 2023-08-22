@@ -1,0 +1,25 @@
+{
+  "name": "sistolda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "./",
+  "permissions": [
+    "videoCapture"
+  ],
+  "scripts": {
+    "start": "electron .",
+    "package": "yarn electron-packager . --asar=true",
+    "package-linux": "yarn electron-packager . --asar=true --platform=linux"
+  },
+  "keywords": [],
+  "author": "Brenno Givigier",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^25.3.0",
+    "electron-packager": "^17.1.1"
+  },
+  "dependencies": {
+    "pg": "^8.11.3"
+  }
+}

@@ -1,0 +1,40 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+  binaryTargets = ["debian-openssl-1.1.x", "native"]
+}
+
+model Visitante {
+  id              String     @id @default(cuid())
+  nome            String
+  cpf             String        @unique
+  rg              String
+  orgaoEmissor    String
+  estado          String
+  nip             String?       @unique
+  telefone        String
+  crachaProprio   Boolean
+  Registro Registro[]
+}
+
+model Registro {
+  id           String    @id @default(cuid())
+  visitante    Visitante @relation(fields: [visitanteId], references: [id])
+  visitanteId  String
+  entrada      DateTime  @default(now())
+  saida        DateTime?
+  destino      String?
+  cracha       Cracha?     @relation(fields: [idCracha], references: [id])
+  idCracha     String? @unique
+  numeroCracha Int?
+}
+
+model Cracha {
+  id         String    @id @default(cuid())
+  numero     Int @unique
+  registro   Registro?
+}

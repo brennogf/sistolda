@@ -1,0 +1,8 @@
+main {
+  background-color: var(--white);
+  color: var(--otherBlack);
+  flex: 1;
+  padding-top: 3rem;
+  padding-left: 17rem;
+  padding-right: 1rem;
+}
