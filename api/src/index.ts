@@ -18,7 +18,7 @@ app.use(cors());
 app.use(express.json());
 app.use(routes);
 
-app.use(express.static(path.join(__dirname, "../public")))
+app.use(express.static(path.join(__dirname, "../../frontend/build")))
 
 app.listen(port, "localhost", () => {
   console.log(`Servidor rodando em http://localhost:${port}`)

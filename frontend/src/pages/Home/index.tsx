@@ -199,7 +199,7 @@ const App: React.FC = () => {
       </Button>
       <span
         style={{
-          paddingLeft: '49rem'
+          paddingLeft: '48.5rem'
         }}
       />
       <DatePicker format="dd/MM/y" onChange={onChangeCalendar} value={data} />

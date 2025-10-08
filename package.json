@@ -8,9 +8,10 @@
     "videoCapture"
   ],
   "scripts": {
-    "start": "electron .",
-    "package": "yarn electron-packager . --asar=true",
-    "package-linux": "yarn electron-packager . --asar=true --platform=linux"
+    "start": "electron . --no-sandbox",
+    "package": "yarn electron-packager . --asar",
+    "package-linux": "yarn electron-packager . --asar --platform=linux",
+    "package-windows": "yarn electron-packager . --asar --platform=win32 --arch=x64"
   },
   "keywords": [],
   "author": "Brenno Givigier",
