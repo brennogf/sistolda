@@ -1,4 +1,4 @@
-<h1>
+<h1 align="center">
     SisTolda
 </h1>
 
@@ -7,7 +7,7 @@
 </h4>
 
 <p align="center">
- <img src="https://github.com/user-attachments/assets/b5736101-d707-428b-91b9-d847391cca14">
+ <img width="926" height="457" alt="image" src="https://github.com/user-attachments/assets/b5736101-d707-428b-91b9-d847391cca14">
 </p>
 
 ## :link: Links
@@ -59,4 +59,5 @@ Este projeto está sob licença do MIT. Veja o [LICENSE](https://github.com/bren
 ---
 
 Feito com ♥ por Brenno Givigier :wave: [Entre em contato!](https://www.linkedin.com/in/brenno-givigier/)
+
 
