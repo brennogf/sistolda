@@ -4,7 +4,7 @@ import cors from "cors"
 const bodyParser = require('body-parser')
 const app = express()
 const routes = require("./routes")
-const port = 3001
+const PORT = 3001
 
 app.use(bodyParser.json({ limit: '10mb' }));
 app.use(bodyParser.urlencoded({ extended: true, limit: '10mb' }));
@@ -20,6 +20,6 @@ app.use(routes);
 
 app.use(express.static(path.join(__dirname, "../frontend/build")))
 
-app.listen(port, "localhost", () => {
-  console.log(`Servidor rodando em http://localhost:${port}`)
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Servidor rodando na porta: ${PORT}`)
 })
