@@ -16,6 +16,6 @@ app.use(routes);
 
 app.use(express.static(path.join(__dirname, "../../frontend/build")))
 
-app.listen(PORT, "0.0.0.0", () => {
+app.listen(PORT, () => {
   console.log(`Servidor rodando na porta: ${PORT}`)
 })
