@@ -10,6 +10,16 @@
  <img width="640" height="300" alt="image" src="https://github.com/user-attachments/assets/b5736101-d707-428b-91b9-d847391cca14">
 </p>
 
+## :memo: Descrição
+
+Este sistema foi desenvolvido para a Marinha do Brasil com o objetivo de reforçar a segurança e o controle de acesso de visitantes à Organização Militar (OM).
+O sistema realiza o registro completo das pessoas que visitam a unidade, armazenando informações como nome, CPF, RG, NIP (no caso de militares), telefone e destino.
+
+Além disso, é possível anexar fotos da pessoa e de seu documento de identidade.
+Após o primeiro cadastro, não é necessário refazer o registro — basta informar o CPF ou NIP para gerar uma nova entrada rapidamente.
+
+O sistema também permite consultar o histórico de visitas de qualquer data, garantindo rastreabilidade e eficiência no controle de acessos.
+
 ## :link: Links
 
 -  [Video](https://drive.google.com/file/d/1G7iHFogsMUYO3ZqamvhgqLUbQFSay4tb/view?usp=drive_link)
@@ -59,6 +69,7 @@ Este projeto está sob licença do MIT. Veja o [LICENSE](https://github.com/bren
 ---
 
 Feito com ♥ por Brenno Givigier :wave: [Entre em contato!](https://www.linkedin.com/in/brenno-givigier/)
+
 
 
 
