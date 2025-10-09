@@ -1,5 +1,4 @@
-<img width="1852" height="915" alt="image" src="https://github.com/user-attachments/assets/b5736101-d707-428b-91b9-d847391cca14" /><h1 align="center">
-    <br>
+<h1>
     SisTolda
 </h1>
 
@@ -8,12 +7,12 @@
 </h4>
 
 <p align="center">
- <img src="https://ibb.co/DDrdfTLL">
+ <img src="https://github.com/user-attachments/assets/b5736101-d707-428b-91b9-d847391cca14">
 </p>
 
 ## :link: Links
 
--  [Video](https://app.screencastify.com/watch/zRAAdCbnqtPrhmbId6Bi)
+-  [Video](https://drive.google.com/file/d/1G7iHFogsMUYO3ZqamvhgqLUbQFSay4tb/view?usp=drive_link)
 -  [Demo](https://sistolda.onrender.com)
 
 ## :rocket: Tecnologias
@@ -60,3 +59,4 @@ Este projeto está sob licença do MIT. Veja o [LICENSE](https://github.com/bren
 ---
 
 Feito com ♥ por Brenno Givigier :wave: [Entre em contato!](https://www.linkedin.com/in/brenno-givigier/)
+
