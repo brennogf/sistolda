@@ -4,15 +4,11 @@ import cors from "cors"
 const bodyParser = require('body-parser')
 const app = express()
 const routes = require("./routes")
-const PORT = 3001
+const PORT = process.env.PORT || 4000
 
 app.use(bodyParser.json({ limit: '10mb' }));
 app.use(bodyParser.urlencoded({ extended: true, limit: '10mb' }));
 
-const corsOptions = {
-  origin: "http://localhost:3000",
-  optionsSuccessStatus: 200,
-};
 app.use(cors());
 
 app.use(express.json());
