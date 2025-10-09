@@ -1,5 +1,5 @@
 import axios from 'axios'
 
-const api = axios.create({ baseURL: 'http://localhost:10000' })
+const api = axios.create({ baseURL: 'https://sistolda.onrender.com' })
 
 export default api
