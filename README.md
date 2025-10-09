@@ -20,6 +20,8 @@ Após o primeiro cadastro, não é necessário refazer o registro — basta info
 
 O sistema também permite consultar o histórico de visitas de qualquer data, garantindo rastreabilidade e eficiência no controle de acessos.
 
+Ele funciona tanto como aplicação web (site) quanto como software para desktop, compatível com Windows e Linux.
+
 ## :link: Links
 
 -  [Video](https://drive.google.com/file/d/1G7iHFogsMUYO3ZqamvhgqLUbQFSay4tb/view?usp=drive_link)
@@ -69,6 +71,7 @@ Este projeto está sob licença do MIT. Veja o [LICENSE](https://github.com/bren
 ---
 
 Feito com ♥ por Brenno Givigier :wave: [Entre em contato!](https://www.linkedin.com/in/brenno-givigier/)
+
 
 
 
