@@ -194,15 +194,16 @@ const App: React.FC = () => {
           type="text"
         />
       </Form.Group>
-      <Button variant="primary" onClick={handleEntrada}>
-        Dar entrada
-      </Button>
-      <span
-        style={{
-          paddingLeft: '48.5rem'
-        }}
-      />
-      <DatePicker format="dd/MM/y" onChange={onChangeCalendar} value={data} />
+      <div style={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between'
+      }}>
+        <Button variant="primary" onClick={handleEntrada}>
+          Dar entrada
+        </Button>
+        <DatePicker format="dd/MM/y" onChange={onChangeCalendar} value={data} />
+      </div>
       <br />
       <br />
       <Table
