@@ -5,14 +5,15 @@
   "author": "Brenno Givigier <brennogivigier@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "npx babel src --extensions \".js,.ts\" --out-dir dist --copy-files --no-copy-ignored && yarn --cwd ../frontend build",
+    "build": "npx babel src --extensions \".js,.ts\" --out-dir dist --copy-files --no-copy-ignored && cd ../frontend && yarn build",
     "start": "node dist/index.js",
     "dev": "ts-node-dev -r tsconfig-paths/register --respawn --poll --transpile-only --ignore-watch node_modules --no-notify src/index.ts",
     "pretest": "yarn prisma migrate dev",
     "test": "jest --forceExit",
     "lint": "eslint src --ext ts --ignore-path .prettierignore",
     "format": "prettier \"**/*.+(ts)\" --write",
-    "migrate": "prisma migrate dev"
+    "migrate": "prisma migrate dev",
+    "deploy" : "yarn install --frozen-lockfile && npx prisma migrate deploy && npx babel src --extensions \".js,.ts\" --out-dir dist --copy-files --no-copy-ignored && cd ../frontend && yarn install --frozen-lockfile && npx react-scripts build"
   },
   "devDependencies": {
     "@babel/cli": "^7.22.9",
