@@ -194,11 +194,13 @@ const App: React.FC = () => {
           type="text"
         />
       </Form.Group>
-      <div style={{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-between'
-      }}>
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between'
+        }}
+      >
         <Button variant="primary" onClick={handleEntrada}>
           Dar entrada
         </Button>
