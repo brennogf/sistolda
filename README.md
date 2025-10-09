@@ -38,7 +38,7 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 
 ## :information_source: Como usar
 
-Para clonar e executar este aplicativo, você precisará [Git](https://git-scm.com), [Node.js v12.18][nodejs] ou superior + [Yarn v1.22.4][yarn] ou superior instalado em seu computador. Na sua linha de comando:
+Para clonar e executar este aplicativo, você precisará [Git](https://git-scm.com), [Node.js v12.18](https://nodejs.org/) ou superior + [Yarn v1.22.4](https://yarnpkg.com) ou superior instalado em seu computador. Na sua linha de comando:
 
 ```bash
 # Clone este repositório
@@ -71,6 +71,7 @@ Este projeto está sob licença do MIT. Veja o [LICENSE](https://github.com/bren
 ---
 
 Feito com ♥ por Brenno Givigier :wave: [Entre em contato!](https://www.linkedin.com/in/brenno-givigier/)
+
 
 
 
