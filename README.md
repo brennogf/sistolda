@@ -66,11 +66,12 @@ $ yarn dev
 ```
 
 ## :memo: Licença
-Este projeto está sob licença do MIT. Veja o [LICENSE](https://github.com/brennogf/proffy-backend/blob/master/LICENSE) para mais informações.
+Este projeto está sob licença do MIT. Veja o [LICENSE](https://github.com/brennogf/sistolda/blob/main/LICENSE) para mais informações.
 
 ---
 
 Feito com ♥ por Brenno Givigier :wave: [Entre em contato!](https://www.linkedin.com/in/brenno-givigier/)
+
 
 
 
