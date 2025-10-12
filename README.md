@@ -34,7 +34,7 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 -  [NodeJS](https://nodejs.org/)
 -  [React](https://reactjs.org/)
 -  [TypeScript](https://www.typescriptlang.org/)
--  [Electron](www.electronjs.org/)
+-  [Electron](https://www.electronjs.org/)
 
 ## :information_source: Como usar
 
@@ -71,6 +71,7 @@ Este projeto está sob licença do MIT. Veja o [LICENSE](https://github.com/bren
 ---
 
 Feito com ♥ por Brenno Givigier :wave: [Entre em contato!](https://www.linkedin.com/in/brenno-givigier/)
+
 
 
 
