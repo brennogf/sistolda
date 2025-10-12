@@ -24,8 +24,8 @@ Ele funciona tanto como aplicação web (site) quanto como software para desktop
 
 ## :link: Links
 
--  [Video](https://drive.google.com/file/d/1G7iHFogsMUYO3ZqamvhgqLUbQFSay4tb/view?usp=drive_link)
--  [Demo](https://sistolda.onrender.com)
+-  [Demonstração](https://sistolda.onrender.com)
+-  [Vídeo](https://drive.google.com/file/d/1G7iHFogsMUYO3ZqamvhgqLUbQFSay4tb/view?usp=drive_link)
 
 ## :rocket: Tecnologias
 
@@ -71,6 +71,7 @@ Este projeto está sob licença do MIT. Veja o [LICENSE](https://github.com/bren
 ---
 
 Feito com ♥ por Brenno Givigier :wave: [Entre em contato!](https://www.linkedin.com/in/brenno-givigier/)
+
 
 
 
