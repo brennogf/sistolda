@@ -32,7 +32,7 @@ Ele funciona tanto como aplicação web (site) quanto como software para desktop
 Este projeto foi desenvolvido com as seguintes tecnologias:
 
 -  [NodeJS](https://nodejs.org/)
--  [React](https://reactjs.org/)
+-  [ReactJS](https://reactjs.org/)
 -  [TypeScript](https://www.typescriptlang.org/)
 -  [Electron](https://www.electronjs.org/)
 
@@ -71,6 +71,7 @@ Este projeto está sob licença do MIT. Veja o [LICENSE](https://github.com/bren
 ---
 
 Feito com ♥ por Brenno Givigier :wave: [Entre em contato!](https://www.linkedin.com/in/brenno-givigier/)
+
 
 
 
