@@ -3,7 +3,7 @@
 </h1>
 
 <h4 align="center">
-    Sistema de registros de visitantes.
+    Sistema de registro de visitantes.
 </h4>
 
 <p align="center">
@@ -71,6 +71,7 @@ Este projeto está sob licença do MIT. Veja o [LICENSE](https://github.com/bren
 ---
 
 Feito com ♥ por Brenno Givigier :wave: [Entre em contato!](https://www.linkedin.com/in/brenno-givigier/)
+
 
 
 
