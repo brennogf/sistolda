@@ -4,6 +4,9 @@
   "main": "src/index.ts",
   "author": "Brenno Givigier <brennogivigier@gmail.com>",
   "license": "MIT",
+  "engines": {
+    "node": "18.x"
+},
   "scripts": {
     "build": "npx babel src --extensions \".js,.ts\" --out-dir dist --copy-files --no-copy-ignored && cd ../frontend && npm run build",
     "start": "node dist/index.js",
