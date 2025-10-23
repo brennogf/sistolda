@@ -16,7 +16,7 @@
     "lint": "eslint src --ext ts --ignore-path .prettierignore",
     "format": "prettier \"**/*.+(ts)\" --write",
     "migrate": "prisma migrate dev",
-    "deploy" : "npm install --frozen-lockfile --legacy-peer-deps && npx prisma migrate deploy && npx babel src --extensions \".js,.ts\" --out-dir dist --copy-files --no-copy-ignored && cd ../frontend && npm install --frozen-lockfile --legacy-peer-deps && NODE_OPTIONS=--openssl-legacy-provider npx react-scripts build"
+    "deploy" : "npm install --frozen-lockfile --legacy-peer-deps && npx prisma migrate deploy && npx babel src --extensions ".js,.ts" --out-dir dist --copy-files --no-copy-ignored && cd frontend && rm -rf node_modules package-lock.json && npm install ajv@6 ajv-keywords@3 --legacy-peer-deps --force && npm install --frozen-lockfile --legacy-peer-deps && NODE_OPTIONS=--openssl-legacy-provider npx react-scripts build"
   },
   "devDependencies": {
     "@babel/cli": "^7.22.9",
