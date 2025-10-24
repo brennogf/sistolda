@@ -9,9 +9,9 @@
   ],
   "scripts": {
     "start": "electron . --no-sandbox",
-    "package": "yarn electron-packager . --asar",
-    "package-linux": "yarn electron-packager . --asar --platform=linux",
-    "package-windows": "yarn electron-packager . --asar --platform=win32 --arch=x64"
+    "package": "npx electron-packager . --asar",
+    "package-linux": "npx electron-packager . --asar --platform=linux",
+    "package-windows": "npx electron-packager . --asar --platform=win32 --arch=x64"
   },
   "keywords": [],
   "author": "Brenno Givigier",

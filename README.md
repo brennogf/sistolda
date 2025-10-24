@@ -24,17 +24,17 @@ Ele funciona tanto como aplicação web (site) quanto como software para desktop
 
 ## :link: Links
 
--  [Demonstração](https://sistolda.onrender.com)
--  [Vídeo](https://drive.google.com/file/d/1G7iHFogsMUYO3ZqamvhgqLUbQFSay4tb/view?usp=drive_link)
+- [Demonstração](https://sistolda.onrender.com)
+- [Vídeo](https://drive.google.com/file/d/1G7iHFogsMUYO3ZqamvhgqLUbQFSay4tb/view?usp=drive_link)
 
 ## :rocket: Tecnologias
 
 Este projeto foi desenvolvido com as seguintes tecnologias:
 
--  [NodeJS](https://nodejs.org/)
--  [ReactJS](https://reactjs.org/)
--  [TypeScript](https://www.typescriptlang.org/)
--  [Electron](https://www.electronjs.org/)
+- [NodeJS](https://nodejs.org/)
+- [ReactJS](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Electron](https://www.electronjs.org/)
 
 ## :information_source: Como usar
 
@@ -50,33 +50,30 @@ DATABASE_URL=postgresql://postgres:postgres@localhost:5432/postgres
 
 # Inicie o Docker
 $ cd sistolda
-$ docker-compose up
+$ docker-compose up -d
 
-# Em outro terminal, entre no repositório e instale as dependências
-$ cd sistolda/frontend
-$ npm install
+# Instale as dependências
+$ cd frontend
+$ npm install --frozen-lockfile --legacy-peer-deps
 $ cd ../api
-$ npm install
+$ npm install --frozen-lockfile --legacy-peer-deps
 
 # Rode as migrations
 $ npm run migrate
 
-# Execute o aplicativo
+# Execute o frontend e backend
 $ npm run dev
+
+# Se quiser executar o aplicativo desktop com electron
+# Em outro terminal
+$ cd sistolda
+$ npm run start
 ```
 
 ## :memo: Licença
+
 Este projeto está sob licença do MIT. Veja o [LICENSE](https://github.com/brennogf/sistolda/blob/main/LICENSE) para mais informações.
 
 ---
 
 Feito com ♥ por Brenno Givigier :wave: [Entre em contato!](https://www.linkedin.com/in/brenno-givigier/)
-
-
-
-
-
-
-
-
-

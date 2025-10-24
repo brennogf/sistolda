@@ -14,7 +14,7 @@ function createWindow() {
   })
   // win.webContents.openDevTools()
   win.maximize()
-  win.loadURL("http://localhost:3001/")
+  win.loadURL("http://localhost:4000/")
   win.setMenu(null)
   win.once('ready-to-show', () => {
     win.show()
@@ -45,9 +45,9 @@ adminClient.query(createDatabaseQuery, (dbErr) => {
     adminClient.end()
   } else {
     console.log('Banco de dados criado com sucesso')
-    
+
     adminClient.end()
-    
+
     const client = new Client({
       user: 'postgres',
       host: 'localhost',
@@ -55,15 +55,15 @@ adminClient.query(createDatabaseQuery, (dbErr) => {
       password: 'postgres',
       port: 5432,
     })
-    
+
     client.connect()
-    
+
     client.query(sqlFileContent, (sqlErr) => {
       if (sqlErr) {
         console.error('Erro ao executar o arquivo SQL: ', sqlErr)
       } else {
         console.log('Arquivo SQL executado com sucesso (tabelas criadas)')
-      }   
+      }
       client.end()
     })
   }
