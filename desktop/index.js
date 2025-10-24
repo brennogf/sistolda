@@ -1,5 +1,9 @@
 const { app, BrowserWindow } = require('electron')
-const express = require('./api/dist/index')
+const isDev = process.env.NODE_ENV === 'development'
+
+if (!isDev) {
+  const express = require("../backend/dist/index")
+}
 const { Client } = require('pg')
 const fs = require('fs')
 const path = require('path')
@@ -14,7 +18,8 @@ function createWindow() {
   })
   // win.webContents.openDevTools()
   win.maximize()
-  win.loadURL("http://localhost:4000/")
+
+  win.loadURL(isDev ? 'http://localhost:3000' : 'http://localhost:4000')
   win.setMenu(null)
   win.once('ready-to-show', () => {
     win.show()
@@ -33,7 +38,7 @@ const adminClient = new Client({
   port: 5432,
 })
 
-const sqlFilePath = path.join(__dirname, 'api/prisma/migrations/20230817133741_dev/migration.sql')
+const sqlFilePath = path.join(__dirname, '../backend/prisma/migrations/20230817133741_dev/migration.sql')
 const sqlFileContent = fs.readFileSync(sqlFilePath, 'utf8')
 
 adminClient.connect()

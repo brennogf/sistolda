@@ -1,22 +1,22 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable indent */
 /* eslint-disable multiline-ternary */
-import React, { useEffect, useRef, useState } from 'react'
-import Table from 'react-bootstrap/Table'
-import Button from 'react-bootstrap/Button'
-import PageDefault from '../../components/PageDefault'
-import Image from 'react-bootstrap/Image'
-import Form from 'react-bootstrap/Form'
-import DatePicker from 'react-date-picker'
-import api from '../../services/api'
-import 'react-date-picker/dist/DatePicker.css'
-import 'react-calendar/dist/Calendar.css'
 import { format } from 'date-fns-tz'
+import React, { useEffect, useRef, useState } from 'react'
+import Button from 'react-bootstrap/Button'
+import Form from 'react-bootstrap/Form'
+import Image from 'react-bootstrap/Image'
+import Table from 'react-bootstrap/Table'
+import 'react-calendar/dist/Calendar.css'
+import DatePicker from 'react-date-picker'
+import 'react-date-picker/dist/DatePicker.css'
 import { useNavigate } from 'react-router-dom'
-import { formatarTelefone } from '../../utils/Formatacao'
-import { error, entrou, saiu } from '../../utils/Toast'
 import { ToastContainer } from 'react-toastify'
 import CustomModal from '../../components/CustomModal'
+import PageDefault from '../../components/PageDefault'
+import api from '../../services/api'
+import { formatarTelefone } from '../../utils/Formatacao'
+import { entrou, error, saiu } from '../../utils/Toast'
 
 const App: React.FC = () => {
   const inputRef = useRef(null)

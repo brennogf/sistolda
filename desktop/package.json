@@ -8,7 +8,8 @@
     "videoCapture"
   ],
   "scripts": {
-    "start": "electron . --no-sandbox",
+    "dev": "NODE_ENV=development electron . --no-sandbox",
+    "start": "cd ../backend && npm run build && cd ../desktop && electron . --no-sandbox",
     "package": "npx electron-packager . --asar",
     "package-linux": "npx electron-packager . --asar --platform=linux",
     "package-windows": "npx electron-packager . --asar --platform=win32 --arch=x64"

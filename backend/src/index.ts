@@ -5,6 +5,10 @@ const bodyParser = require('body-parser')
 const app = express()
 const routes = require('./routes')
 
+const isDev = process.env.NODE_ENV === 'development'
+if (!isDev) {
+  require('dotenv').config()
+}
 const PORT = process.env.PORT || 4000
 
 app.use(bodyParser.json({ limit: '10mb' }))
@@ -19,7 +23,9 @@ app.use(cors(corsOptions))
 app.use(express.json())
 app.use(routes)
 
-app.use(express.static(path.join(__dirname, '../../frontend/build')))
+if (!isDev) {
+  app.use(express.static(path.join(__dirname, '../../frontend/build')))
+}
 
 app.listen(PORT, () => {
   console.log(`Servidor rodando na porta: ${PORT}`)

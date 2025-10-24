@@ -44,10 +44,6 @@ Para clonar e executar este aplicativo, você precisará [Git](https://git-scm.c
 # Clone este repositório
 $ git clone https://github.com/brennogf/sistolda
 
-# Prepare o banco de dados:
-# Crie um .env dentro da pasta "api" e cole:
-DATABASE_URL=postgresql://postgres:postgres@localhost:5432/postgres
-
 # Inicie o Docker
 $ cd sistolda
 $ docker-compose up -d
@@ -58,7 +54,8 @@ $ npm install --frozen-lockfile --legacy-peer-deps
 $ cd ../api
 $ npm install --frozen-lockfile --legacy-peer-deps
 
-# Rode as migrations
+# Prepare o banco de dados
+# Renomeia o arquivo ".env.example" para ".env"
 $ npm run migrate
 
 # Execute o frontend e backend
@@ -66,8 +63,8 @@ $ npm run dev
 
 # Se quiser executar o aplicativo desktop com electron
 # Em outro terminal
-$ cd sistolda
-$ npm run start
+$ cd sistolda/desktop
+$ npm run dev
 ```
 
 ## :memo: Licença
